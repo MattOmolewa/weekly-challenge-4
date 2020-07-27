@@ -31,8 +31,8 @@ function minCost(costs) {
         costs[i][2] += Math.min(costs[i-1][0], costs[i-1][1]);
     }
  
-    let m = costs.length-1;
-    return Math.min(Math.min(costs[m][0], costs[m][1]), costs[m][2]);
+    let minCost = costs.length-1;
+    return Math.min(Math.min(costs[minCost][0], costs[minCost][1]), costs[minCost][2]);
 }
 
 minCost([[1, 2, 3], [1, 2, 3], [3, 3, 1]]) // 4
